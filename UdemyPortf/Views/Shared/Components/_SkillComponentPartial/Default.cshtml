@@ -1,0 +1,20 @@
+﻿@model List<UdemyPortf.DALL.entities.Skill>
+
+    
+
+
+<div class="col-six tab-full right">
+    <h3>Programlama Dilleri ve Teknolojiler</h3>
+
+    <ul class="skill-bars">
+        @foreach (var item in Model)
+        {
+            <li>
+                <div class="progress percent90"><span>@item.Value%</span></div>
+                <strong>@item.Tıtle</strong>
+            </li>
+        }
+       
+        
+    </ul>
+</div>
